@@ -1,0 +1,49 @@
+{% extends 'data/base.html' %}
+{% load static %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'data/css/check.css' %}">
+{% endblock %}
+
+{% block title %}
+Главная check
+{% endblock %}
+{% block content %}
+<div id="dir">
+    <div class="div" id="">
+        <img src="{% static 'data/img/fastfood.jpg' %}" alt="" width="100%" height="">
+    </div>
+    <div id="f">
+        <nav id="nav" style="color: white;">
+            <div class="container d-flex flex-wrap" id="div">
+                <ul id="ul" class="nav me-auto">
+                    <li id="home" class="nav-item" ><a href="{% url '/' %}" class="nav-link link-light px-2 active" aria-current="page">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</div>
+<div id="container" style="display: flex;">
+    <div class="row" id="rwo" style="display: flex; width: 100%;">
+        {% for x in i %}
+            <div style="width: 25%;">
+                <div id="img" style="text-align: center; margin-top: 20px;">
+                    <img id="res" style="border-radius: 15%;" src="{{x.ingredients_img.url}}" alt="" width="150px" height="150px">
+                </div>
+                    <p class="lead"  style="font-size:24;text-align:center">{{x.ingredients_name}}</p>
+                    <p class="lead" style="font-size:20px;text-align:center;">{{x.ingredients_validity}}</p>
+            </div>
+            {% endfor %}
+    </div>
+</div>
+
+
+<div style="text-align: center; margin: 20px 0 100px 0;">
+    <a href="/supplier">
+        <button class="btn btn-success" style="width: 160px;">
+        REESTABLISH
+    </button>
+    </a>
+</div>
+{% endblock %}

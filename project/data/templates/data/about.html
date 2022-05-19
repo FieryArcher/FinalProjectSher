@@ -1,0 +1,95 @@
+{% extends 'data/base.html' %}
+{% load static %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'data/css/index1.css' %}">
+{% endblock %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<div id="dir">
+    <div class="div" id="img">
+        <img src="{% static 'data/img/pizza.jpg' %}" alt="" width="100%" height="">
+    <div id="pizza">
+        <h3 style="margin-top: -250px; text-align: center;" >
+            <span id="span" style="color: white; font-family: monospace;">
+                PIZZA OF THE DAY
+            </span>
+        </h3>
+    </div>
+    </div>
+</div>
+
+<div id="document" style="text-align: center; margin-top: 250px;">
+    <h1 id="h1" style="color: red;">
+        OUR MENU
+    </h1>
+    <h6 style="margin-top: 20px; font-family: Cabin; color: #333">
+        Food, treats and drinks full of big and bold back yard flavor. Take your pick.
+    </h6>
+</div>
+<div style="display: flex; margin-top: 40px; justify-content: space-around;" >
+    <div  style="width: 405px; height: 480px;"  >
+        <div style="text-align: center;">
+            <img style="align-items: center;" src="{% static 'data/img/inner_pizza1.png' %}" alt="">
+            <h4 style="margin-top: 20px;">BEEF & PORK</h4>
+            <h6 style="width: 320px; height: 50px; margin-left: 40px; font-family: Cabin; color: #333; margin-top: 20px;">Flatbread with tomatoes, cheese, oil, garlic, basil and sliced mozzarella.</h6>
+        </div>
+    </div>
+    <div style="width: 405px; height: 480px;">
+        <div style="text-align: center;">
+            <img src="{% static 'data/img/inner_pizza2.png' %}" alt="">
+            <h4 style="margin-top: 20px;">ZESTY PEPPERONI</h4>
+            <h6 style="width: 320px; height: 50px; margin-left: 40px; font-family: Cabin; color: #333; margin-top: 20px;">Generally, the toppings for Zesty pizza
+are ground beef, sausage and pepperoni.</h6>
+        </div>
+    </div>
+    <div style="width: 405px; height: 480px;">
+        <div style="text-align: center;">
+            <img src="{% static 'data/img/inner_pizza3.png' %}" alt="">
+            <h4 style="margin-top: 20px;">VEGGIE</h4>
+            <h6 style="width: 320px; height: 50px; margin-left: 40px; font-family: Cabin; color: #333; margin-top: 20px;">Authentic pizza which creates the same
+delicious, gooey, and crispy result.</h6>
+        </div>
+    </div>
+</div>
+<div style="display: flex; margin-top: 40px; justify-content: space-around;" >
+    <div  style="width: 405px; height: 480px;"  >
+        <div style="text-align: center;">
+            <img style="align-items: center;" src="{% static 'data/img/inner_pizza4.png' %}" alt="">
+            <h4 style="margin-top: 20px;">HAWAIIAN</h4>
+            <h6 style="width: 320px; height: 50px; margin-left: 40px; font-family: Cabin; color: #333; margin-top: 20px;">Despite its name, Hawaiian pizza has
+nothing to do with famous toppings.</h6>
+        </div>
+    </div>
+    <div style="width: 405px; height: 480px;">
+        <div style="text-align: center;">
+            <img src="{% static 'data/img/inner_pizza5.png' %}" alt="">
+            <h4 style="margin-top: 20px;">SPINACH ALFREDO</h4>
+            <h6 style="width: 320px; height: 50px; margin-left: 40px; font-family: Cabin; color: #333; margin-top: 20px;">This pizza got its start back in the late
+1970’s in the classic Italian restaurant.</h6>
+        </div>
+    </div>
+    <div style="width: 405px; height: 480px;">
+        <div style="text-align: center;">
+            <img src="{% static 'data/img/inner_pizza6.png' %}" alt="">
+            <h4 style="margin-top: 20px;">GREEK PIZZA</h4>
+            <h6 style="width: 320px; height: 50px; margin-left: 40px; font-family: Cabin; color: #333; margin-top: 20px;">Greek pizza is typically baked in a round
+pan that has been heavily coated in olive oil.</h6>
+        </div>
+    </div>
+</div>
+<!--<div>-->
+<!--    <div id="main">-->
+<!--        <img src="{% static 'data/img/cell_pizza.jpg' %}" alt="" width="100%">-->
+<!--    </div>-->
+<!--</div>-->
+
+{% endblock %}

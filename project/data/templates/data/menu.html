@@ -1,0 +1,77 @@
+{% extends 'data/base.html' %}
+{% load static %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'data/css/menu.css' %}">
+{% endblock %}
+
+{% block title %}
+Главная menu
+{% endblock %}
+
+{% block content %}
+
+<div id="dir">
+    <div class="div" id="">
+        <img src="{% static 'data/img/fastfood.jpg' %}" alt="" width="100%" height="">
+    </div>
+    <div id="f">
+        <nav id="nav" style="color: white;">
+            <div class="container d-flex flex-wrap" id="div">
+                <ul id="ul" class="nav me-auto">
+                    <li id="home" class="nav-item" ><a href="{% url '/' %}" class="nav-link link-light px-2 active" aria-current="page">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="dash" class="dash">
+        <span id="best">
+            MENU FEATURES
+        </span>
+    </div>
+</div>
+<div>
+    <div id="test">
+        <span>
+            TASTY & CRUNCHY
+        </span>
+    </div>
+</div>
+<div id="enjoy">
+    <h1 id="en">
+        Choose & enjoy
+    </h1><br>
+</div>
+<div id="inn">
+    <span id="in">In auctor odio odio, ut auctor enim tempus sit amet</span>
+</div>
+
+<div id="container" style="display: flex;">
+    <div class="row" id="rwo" style="">
+        {% for x in meals %}
+            <div class="col-6" style="margin-top: 60px;   width: 49%;">
+                <div id="first">
+                    <div id="img">
+                        <img id="res" src="{{x.image.url}}" alt="" width="" height="">
+                    </div>
+                    <div id="course" >
+                        <div style="display: flex; justify-content: space-between;">
+                            <h4>{{x.food_name}}</h4>
+                            <p>{{x.price}} kzt</p>
+
+                        </div>
+                        <span id="span"><p>{{x.food_description}}</p></span>
+                    </div>
+                    <div id="buy" style="margin: 60px 0 0 0; ">
+                        <a href="{% url 'order' %}">
+                            <button class="btn btn-success" style="width: 70px;">
+                                Buy
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

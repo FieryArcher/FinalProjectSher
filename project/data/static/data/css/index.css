@@ -1,0 +1,168 @@
+    #burgers{
+        display: flex;
+        position: absolute;
+    }
+    span{
+        color: white;
+        font-weight: 800;
+    }
+    #di{
+        color: white;
+        margin-top: 12px;
+        margin-left: 15px;
+    }
+    .fast{
+        margin-left: 20px;
+    }
+    #f{
+        margin-top: -350px;
+        margin-left: 100px;
+        border: 1px solid red;
+        width: 200px;
+        padding: 3px 3px 3px 12px;
+        background-color: red;
+        position: absolute;
+    }
+    .dash{
+        margin-top: -330px;
+        width: 80%;
+        font-size: 80px;
+        margin-left: 95px;
+        display: block;
+        height: 192px;
+        border: 1px solid red;
+    }
+    #red{
+        display: flex;
+        margin-top: 135px;
+        justify-content: space-around;
+        background: red;
+    }
+    #first, #second, #third, #fourth{
+    border: 1px solid red;
+    height: 300px;
+    margin-top: 30px;
+    width: 300px;
+    }
+    #first, #second, #third, #fourth, img{
+        text-align: center;
+    }
+    #fir, #fir1, #fir2, #fir3{
+        display: block;
+    }
+    #world, #world1, #world2, #world3{
+        display: block;
+        margin-top: 15px;
+        width: 280px;
+    }
+    #test{
+        margin: 50px 0px 0 530px;
+        border: 1px solid red;
+        width: 200px;
+        padding: 3px 3px 3px 12px;
+        background-color: red;
+
+    }
+    #enjoy{
+        margin: 30px 0px 0 470px;
+        width: 400px;
+        padding: 3px 3px 3px 12px;
+    }
+    #bur{
+        justify-content: space-around;
+        display: flex;
+    }
+    h4{
+        text-align: center;
+    }
+    #end{
+        margin-top: 80px;
+        display: flex;
+        width: 100%;
+    }
+    #dark{
+        height: 500px;
+        color: #232323;
+    }
+
+    #u{
+        margin-top: 70px;
+    }
+    #us{
+        margin-left: 100px;
+        border: 1px solid red;
+        width: 200px;
+        padding: 3px 3px 3px 3px;
+        background-color: red;
+    }
+    #number{
+        font-size: 40px;
+        font-weight: 400;
+    }
+    #icon{
+        display: flex;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    #wor{
+        margin-left: 30px;
+        color: white;
+    }
+    #goe{
+        display: flex;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    #mesto{
+        margin-left: 30px;
+        color: white;
+    }
+    #car{
+        display: flex;
+        border: 1px solid red;
+    }
+    #widgets{
+        border: 1px solid red;
+        display: flex;
+        weight: 100%;
+    }
+
+    .container{
+        display: flex;
+    }
+    .row{
+        display: flex;
+    }
+
+
+    .card-body{
+        display:flex;
+    }
+
+    #cart_light{
+        display: flex;
+    }
+
+    .card-text{
+        color: white;
+    }
+
+    .card-title{
+        font-weight: bold;
+        color: white;
+        display:flex;
+    }
+
+    .widget-btn{
+        display:flex;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: capitalize;
+        background-color: red;
+        color: white;
+    }
+
+    .widget-btn:hover{
+        background-color: white;
+        color: red;
+    }

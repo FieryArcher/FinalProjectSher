@@ -1,0 +1,127 @@
+{% extends 'data/base.html' %}
+{% load static %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'data/css/food.css' %}">
+{% endblock %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+
+{% block content %}
+
+
+<div id="dir">
+    <div class="div" id="">
+        <img src="{% static 'data/img/fastfood.jpg' %}" alt="" width="100%" height="">
+    </div>
+</div>
+
+
+<h2 style="text-align: center;margin-top:50px;">Chef</h2>
+<table class="table" style="margin-top: 50px; width: 1000px; margin-left: 130px;">
+    <thead class="table-dark">
+        <tr class="">
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        {% for x in Chef %}
+      <tr class="table-warning">
+          <td>
+                            <p>{{x.id }}</p>
+          </td>
+          <td>
+                            <p>{{x.chef_name}}</p>
+          </td>
+          <td>
+                            <p>{{x.chef_price}} KZT</p>
+          </td>
+
+
+      </tr>
+         {% endfor %}
+    </tbody>
+  </table>
+
+<h2 style="text-align: center; margin-top:50px">Waiter</h2>
+<table class="table" style="margin-top: 50px; width: 1000px; margin-left: 130px;">
+    <thead class="table-dark">
+        <tr class="">
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Price</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        {% for x in Waiter %}
+      <tr class="table-warning">
+          <td>
+                            <p>{{x.waiter_id }}</p>
+          </td>
+          <td>
+                            <p>{{x.waiter_name}}</p>
+          </td>
+           <td>
+                            <p>{{x.waiter_phone }}</p>
+            </td>
+          <td>
+                            <p>{{x.waiter_price}} KZT</p>
+          </td>
+
+
+      </tr>
+         {% endfor %}
+    </tbody>
+  </table>
+
+<h2 style="text-align: center;margin-top:50px;">Supplier</h2>
+<table class="table" style="margin-top: 50px; width: 1000px; margin-left: 130px;">
+    <thead class="table-dark">
+        <tr class="">
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+             <th scope="col">Phone</th>
+            <th scope="col">Price</th>
+              <th scope="col">Chef_name</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        {% for x in Supplier %}
+      <tr class="table-warning">
+          <td>
+                            <p>{{x.supplier_id }}</p>
+          </td>
+           <td>
+                            <p>{{x.supplier_name }}</p>
+          </td>
+          <td>
+                            <p>{{x.supplier_city}}</p>
+          </td>
+           <td>
+                            <p>{{x.supplier_phone }}</p>
+          </td>
+          <td>
+                            <p>{{x.supplier_price }} KZT</p>
+          </td>
+
+          <td>
+                            <p>{{x.supplier_chef_id}} </p>
+          </td>
+
+
+      </tr>
+         {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+

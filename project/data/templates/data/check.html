@@ -1,0 +1,45 @@
+{% extends 'data/base.html' %}
+{% load static %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'data/css/check.css' %}">
+{% endblock %}
+
+{% block title %}
+Главная check
+{% endblock %}
+{% block content %}
+<div id="dir">
+    <div class="div" id="">
+        <img src="{% static 'data/img/fastfood.jpg' %}" alt="" width="100%" height="">
+    </div>
+    <div id="f">
+        <nav id="nav" style="color: white;">
+            <div class="container d-flex flex-wrap" id="div">
+                <ul id="ul" class="nav me-auto">
+                    <li id="home" class="nav-item" ><a href="{% url '/' %}" class="nav-link link-light px-2 active" aria-current="page">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="dash" class="dash">
+        <span id="best">
+            MENU FEATURES
+        </span>
+    </div>
+</div>
+<div id="container" style="display: flex;">
+    <div class="row" id="rwo" style="">
+{% for x in check %}
+    <div class="col-6" style="margin-top:40px; margin-left:40px; width: 30%;">
+        <div class="btn btn-outline-secondary" style="width: 350px">
+            <p class="lead" style="font-size:24px;">Name client : {{x.orders_name}}</p>
+            <p class="lead"style="font-size:20px">Name food : {{x.orders_food}}</p>
+            <p class="lead" > Order date : {{x.data}} </p><br>
+            </div>
+            </div>
+     {% endfor %}
+           </div>
+</div>
+{% endblock %}
+
